@@ -1,21 +1,29 @@
-# Hotel-Room-Management-Admin-App
+# Hotel-Room-Management-App
 
-This is Hotem Room Bokking Management website specifically for admin/manager of the Hotel.
-This site made in MERN Stack architecture.
+Complete admin-facing solution for the management of rooms in a Hotel.
 
-- Admin can book rooms and if room was booked for date already then it will show room booked otherwise it will be booked.
-- Admin can also see past and upcoming bookings.
-- Admin can update or delete bookings as well.
-- Admin can add rooms of any type with desired priece of room incase in future hotel rooms increase.
+## Hotel can have multiple rooms of multiple types.
+Each room type has a different type of pricing.
+- Room type A: 100 Rs per hour
+- Room type B: 80 Rs per hour
+- Room type C: 50 Rs per hour
+## A Hotel can have:
+- 2 rooms of A type
+- 3 rooms of B type
+- 5 rooms of C type
 
-### How to use first time:
-- First create 3 types of rooms from "Create Room" in header with following details:
-   - 2 rooms of A type
-      - 100 rs per room/day with room number A1 and A2
-   - 3 rooms of B type
-      - 80 rs per room/day with room number B1, B2 and B3
-   - 5 rooms of C type
-      - 50 rs per room/day with room number C1, C2, C3, C4 and C5
- 
-- Now admin can see the rooms on home page which he/she created just now.
-- Now admin can book rooms from home page.
+### Functions:
+>Create: A Page where the admin can book the room which takes the user’s email, room number, start time, and end time and books the room accordingly
+The Price of the booking should update as soon as the user updates any one of the room number, start time or end time.
+No two bookings should have overlapping start and end time for the same room.
+
+>Edit: Allow admin to edit any variables like user email, room number, start time, end time and correspondingly take confirmation on updated price.
+
+>Delete: Allow admin to cancel any future booking with the following conditions
+If the booking start time is more than 48 hrs, Show a complete refund on UI
+If booking start time is within 24 hrs to 48 hrs, 50% refund on UI
+Else no refund (but admin can still cancel)
+
+>View: Create a view page for the admin to view all the bookings both upcoming and passed with the following filters
+Filter by room number and room type
+Filter by start time and end time
