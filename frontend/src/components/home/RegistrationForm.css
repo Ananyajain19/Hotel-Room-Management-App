@@ -1,0 +1,58 @@
+body {
+    background-color: azure;
+}
+
+.form-main {
+    display: flex;
+    justify-content: center;
+    padding: 0 3rem;
+
+}
+
+.form-main form {
+    width: 50%;
+    background-color: #f3fff2;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 3rem;
+}
+
+.form-main form label {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+input[type=text],
+input[type=email],
+input[type=date],
+input[type=number],
+select {
+    width: 100%;
+    padding: 8px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #cccccc;
+    border-radius: 12px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.form-main form button {
+    border: 5px solid #323632;
+    border-radius: 5px;
+    background: #f6e5e9;
+    color: #333933;
+    display: inline-block;
+    padding: 10px 20px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.form-main form button:hover {
+    border: 5px groove rgb(239, 193, 86);
+    border-radius: 0px;
+    color: black;
+    background: rgb(239, 193, 86);
+    transition: 0.1s
+}
